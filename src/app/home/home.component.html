@@ -1,8 +1,19 @@
 <div class="test">
-    <h1>Đây là Home</h1>
-    <h2>Chào bạn {{ name }}</h2>
+    <h1 class="examplecolor">Đây là Home</h1>
     <br>
-    <h3 *ngIf="age > 18">Bạn trên 18 tuổi</h3>
+    <input type="text"  [(ngModel)]  ="name">
     <br>
-    <h3 *ngIf="age <=18">Bạn dưới 18 tuổi</h3>
+    <input type="text"  [(ngModel)]  ="age">
+    <br>
+
+    <h2 class="examplecolor">Chào bạn {{ name }}</h2>
+    <br>
+    <h2>Tuổi của bạn là: {{ age }}</h2>
+    <br>
+
+
+    <input type="input" value="{{name}}  {{age}}">
+    <br>
+    <br>
+    <button (click)="resetName()">Reset Name</button>
 </div>

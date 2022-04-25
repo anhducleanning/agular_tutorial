@@ -1,5 +1,19 @@
 .test {
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px red;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+element.style {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+    }
+
+.examplecolor {
+    color: 	hsl(316, 100%, 72%);
+
+}
+
+h1 {
+  font-size: 58px;
+  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);    
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
