@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   public priceSmarPhone = ['1000','2000','450','656','546','225'];
 
   public nameSPObject = [
-    { ten : 'Apple',gia : 1000, hagia :true},
+    { ten : 'Apple',gia : 1000,   hagia :true},
     {ten :'SamSung',gia : -200,hagia :false},
     {ten :'Xiaomi',gia : 423,hagia :true},
     {ten :'Nokia',gia : 545,hagia :false},

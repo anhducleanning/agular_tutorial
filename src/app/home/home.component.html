@@ -12,12 +12,12 @@
         <tr *ngFor="let id of nameSPObject; let i = index">
    
           <td class="center">{{i +1}}</td>
-          <td class="center">{{id.ten}}</td>
+          <td class="center"  >{{id.ten | lowercase}}</td>
           <td class="center">
-            <span [ngClass]="{'so-am': id.gia < 0 }" >{{id.gia}}</span>
+            <span [ngClass]="{'so-am': id.gia < 0 }" >{{id.gia |  currency:'VND':'symbol':'1.3'}}</span>
           </td>
           <td class="center">
-            <span *ngIf="id.hagia;" >Đang Hạ Giá</span>
+            <span >{{id.hagia | onSale | uppercase}}</span>
           </td>
         </tr>
         
