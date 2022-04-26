@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   public vietNamData = [
     { 
       city: 'Tỉnh/Thành Phố', 
-      district: 'Quận/Huyện'
+      district: ['Quận Huyện']
      },
     {
       city: 'Quảng Ninh',
@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
     //   this.districts = search[0].district;
     // }
 
-    // this.districts =
-    // this.vietNamData.find((data) => data.city === city)?.district || [];
+    this.districts =
+      this.vietNamData.find((data) => data.city === city)?.district || [];
   }
 }
